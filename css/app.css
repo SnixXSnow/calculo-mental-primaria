@@ -46,11 +46,11 @@ main{
 
 
 
-.card-calculo a, .resultados a{
+.card-calculo a, .resultados a, .historial a{
     display: block;
     text-align: center;
     /*padding-top: 3rem;*/
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .historial h2, .resultados h2 {
@@ -67,6 +67,7 @@ main{
     border: 2px solid var(--azul);
     border-radius: 5px;
     background-color:var(--gris);
+    
 }
 
 .resultados{
@@ -92,4 +93,8 @@ ul{
 
 .show{
     display:inline-block
+}
+
+.nodoHistorial a{
+    display:inline-block;
 }

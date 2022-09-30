@@ -12,14 +12,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/app.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/app.js"></script>
 </head>
 <body>
     <main>
 
         <div class="row">
-            <div class="col-2 historial">
+            <div class="col-2 historial" id="divHistorial">
                 <h2>Historial</h2>
+                <a onclick="btnLimpiaHistorial()" id="btnLimpiaHistorial" class="btn btn-warning disabled">Limpiar Historial</a>
+                <div id="historial"></div>
             </div>
             <div class="col-6 calculo-mental">
                 <div class="card border border-info border-3 rounded-3  card-calculo">
@@ -65,12 +68,6 @@
 
             </div>
         </div>
-
-
-
-        
     </main>
-    
-    
 </body>
 </html>
